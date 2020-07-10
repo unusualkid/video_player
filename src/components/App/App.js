@@ -15,14 +15,25 @@ class App extends React.Component {
     super(props);
 
     this.state = { src: VIDEOS.fast };
+    this.chooseVideo = this.chooseVideo.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
-  
+
+  chooseVideo(videoFormat) {
+    this.setState({ src: VIDEOS[videoFormat] });
+  }
+
+  handleClick(e) {
+    const text = e.target.value;
+    this.chooseVideo(text);
+  }
+ 
   render() {
     return (
       <div>
         <h1>Video Player</h1>
-        <Menu />
-        <Video />
+        <Menu chooseVideo={this.handleClick} />
+        <Video src={this.state.src} />
       </div>
     );
   }

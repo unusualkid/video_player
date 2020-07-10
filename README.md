@@ -1,3 +1,7 @@
+#Video Player
+
+Make a video player with three React components.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

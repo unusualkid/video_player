@@ -1,6 +1,6 @@
 # Video Player
 
-Make a video player with three React components.
+Make a video player that loads four different videos from Codecademy's database.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
